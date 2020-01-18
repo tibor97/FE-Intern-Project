@@ -37,3 +37,8 @@
 	 	transition: 0.7s;
  	}
 }
+
+@mixin navText($margin){
+    display:none;
+    margin-left:$margin;
+}

@@ -13,7 +13,14 @@
 </head>
   
 <body>
-	<header>
+	<ul class="nav">
+      <a href="#header"><li><span class="spanHeader">header</span></li></a>
+      <a href="#aboutUs"><li><span class="spanAbout">about us</span></li></a>
+      <a href="#portfolio"><li><span class="spanPortfolio">our portfolio</span></li></a>
+      <a href="#advisors"><li><span class="spanAdvisors">our adviors</span></li></a>
+      <a href="#investors"><li><span class="spanInvestors">our investors</span></li></a>
+    </ul>
+	<header id="header">
 		<div class="headerOverlay">
 			<div class="one"></div>
 			<button>LOGIN</button>
@@ -24,15 +31,15 @@
 		    <div class="footHeader">
 		    	<p>partners@harpoon.vc</p>
 		    	<p>MENLO PARK, CA</p>
-		    	<span class="down"></span>
+		    	<a href="#aboutUs"><span class="down"></span></a>
 		   	</div>
 	   	</div> 
     </header>
 	
 	<section>
-    	<h1 class="aboutUsH1">ABOUT US</h1>
+    	<h1 class="aboutUsH1 bl" id="aboutUs">ABOUT US</h1>
     	<article class="aboutUs">
-	    	<div class="leftDiv">
+	    	<div class="leftDiv"  id="aboutUs2">
 		    	<h1 class="quotation">"Harpoon Ventures is building a portfolio of top-tier early stage startups."</h1>
 		    	<p>Harpoon Ventures is building a portfolio of top-tier early stage startups and helping them win them multi-million-dollar unconventional government contracts in support of elite national security units. Our team brings an unparalleled combination of top-tier Silicon Valley venture capital experience together with deep domain knowledge in government, special operations, and intelligence.</p>
 		    </div>
@@ -50,7 +57,7 @@
 		    </div>
     	</article>
     
-    <div class="portfolioBg">
+    <div class="portfolioBg" id="portfolio">
     	<div class="portfolio">
 	    	<h1 class="portfolioH1">OUR PORTFOLIO</h1>
 		    	<article>
@@ -91,11 +98,11 @@
 			</div>
 		</div>
     
-    <div class="advisors">
+    <div class="advisors" id="advisors">
     	<h1 class="advisorsH1">OUR ADVISORS</h1>
     	<article>
 	    	<p class="quotation q1">"We are seeking advisors who provide strategic insight...</p>
-	    	<div class="advisorsCard">
+	    	<div class="advisorsCard" id="advisors2">
 			    <img src="images/DavidPetraeus.jpg">
 			    <div class="text">
 		    		<h3>David Petraeus</h3>
@@ -160,7 +167,7 @@
 	</div>
     
     	
-    <div class="investorsBg">	
+    <div class="investorsBg" id="investors">	
     	<div class="investors">
     		<h1 class="investorsH1">OUR INVESTORS</h1>
 	    	<article>
@@ -181,6 +188,7 @@
 	<footer>
     	<p>Copyright  Harpoon Ventrures 2018. All Rights Reserved</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/javaScript.js"></script>
 </body>
   
