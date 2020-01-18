@@ -1,0 +1,28 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "FE Intern Test",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0",
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tibor97/FE-Intern-Project.git"
+  },
+  "author": "Tibor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tibor97/FE-Intern-Project/issues"
+  },
+  "homepage": "https://github.com/tibor97/FE-Intern-Project#readme"
+}
