@@ -32,6 +32,22 @@ section{
 	@import'investors';	
 }
 
+footer{
+	background-color:$lightBlue;
+	text-align:center;
+	p{
+		padding:1%;
+		color:$white;
+	}
+}
+@media only screen and (max-width: 600px) {
+	footer{
+		p{
+			padding:3%;
+		}
+	}	
+}
+
 
 
 
