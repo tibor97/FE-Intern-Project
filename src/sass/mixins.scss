@@ -5,6 +5,16 @@
   	background-size: cover;
 }
 
+@mixin h1style($color){
+	border-bottom:4px solid $lightBlue;
+  	display:inline-block;
+  	padding:4% 0 0.1% (100-$articleWidth)/2;
+  	font-weight: bold;
+	color:$color;
+	font-size:2em;
+	margin-bottom:2%;
+}
+
 @mixin overlay($position, $color, $opacity){
 	position: $position;
 	width:100%;
@@ -27,4 +37,3 @@
 	 	transition: 0.7s;
  	}
 }
-

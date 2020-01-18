@@ -1,0 +1,123 @@
+@import'variables';
+@import'mixins';
+
+.advisors{
+  	overflow:hidden;
+	.advisorsH1{
+		@include h1style($blueForText);
+	}
+	article{
+		display:flex;
+  		justify-content: space-between;
+	  	flex-wrap: wrap;
+		.advisorsCard{
+			display:flex;
+	  		justify-content: start;
+		  	flex-wrap: wrap;
+			width:50%;
+			height:150px;
+			margin-bottom:$marginBottomCard;
+			img{
+				margin-right:3%;
+				width:150px;
+				height:150px;
+				border-radius: 50%;
+				object-fit: contain;
+			}
+			.text{
+				h3{
+					color: $lightBlue;
+				}			
+				ul{
+					list-style: inside;
+					li{
+						color: $drakBlueForText;
+						font-size:1.1em;
+				  	}
+				}
+			}			
+		}
+		.quotation{
+			width:50%;
+		}
+		.q1{
+			width:51%;
+			margin-bottom:3%;
+		}
+	}
+}
+
+@media only screen and (max-width: 1363px) {
+	.advisors{
+		article{
+			.advisorsCard{
+				display:block;
+				text-align:center;
+				height:300px;
+				img{
+					margin-right:0%;
+				}
+				.text{			
+					ul{
+						display:inline-block;
+						li{
+							text-align:left;
+					  	}
+					}
+				}			
+			}
+			.quotation2{
+				text-align:right;
+				width:50%;
+  				align-self: flex-end;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1135px) {
+	.advisors{
+		article{
+		width:$articleWidth1135;
+		.advisorsCard{
+			height:370px;
+			.text{			
+				ul{
+					display:inline-block;
+					li{
+						text-align:left;
+				  	}
+				}
+			}			
+		}
+		}	
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.advisors{
+		.advisorsH1{
+			font-size:$fontSizeH1Mobile;
+		}
+		article{
+			display:block;
+			text-align:center;
+			.advisorsCard{
+				font-size:$fontSizeMobile;
+				width:$contentWidthMobile;
+				height:520px;
+				img{
+					width:200px;
+					height:200px;
+				}			
+			}
+			.quotation{
+				width:$contentWidthMobile;
+			}
+			.q1{
+				width:$contentWidthMobile;
+			}
+		}
+	}
+}
+

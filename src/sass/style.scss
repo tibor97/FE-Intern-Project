@@ -9,6 +9,29 @@
 }
 @import'header';
 
+section{
+	article{
+		width:$articleWidth;
+		margin:0% auto;
+		padding:$paddingTopArticle 0 $paddingBottomArticle 0;
+		p{
+			line-height:1.8em;
+			font-size:1.1em;
+		}
+		.quotation{
+		color:$blueForText;
+  		display:inline-block;
+  		font-weight: bold;
+		font-size:2em;
+		}
+	}
+
+	@import'about';
+	@import'portfolio';
+	@import'advisors';
+	@import'investors';	
+}
+
 
 
 
