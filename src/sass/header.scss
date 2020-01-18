@@ -1,0 +1,121 @@
+@import'variables';
+@import'mixins';
+
+header{
+	width:100%;
+	height:100vh;	
+  	overflow:hidden;	
+  	@include bgImage("../images/headerimg.jpg");
+  	.headerOverlay{
+	  	display: flex;
+	  	flex-direction: column;
+	  	justify-content: space-between;
+		@include overlay(relative, $darkBlue, 0.9);
+		.one{
+			@include overlay(absolute, $lightBlue, 0.3);
+			z-index:-1;
+			left: 0;
+			top: 0;
+			-webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+			clip-path: polygon(0 0, 0% 100%, 100% 100%);
+		}
+		button{
+			@include button(flex-end, 4% 20% 0 0, bold, 5px 40px);
+		}	
+		.title{
+			position:relative;
+ 			align-self: center;
+ 			color:$white;
+ 			font-weight:bold;
+			h1{
+		 		font-size:2.7em;
+	 		}
+			img{
+		 		width:90%;
+		 		position:absolute;
+		 		top:-140%;
+		 		left:14%;
+		 		transform:rotate(-45deg);
+		 	    -webkit-transform: rotate(-45deg);
+	 		}
+	 	}
+	 	.footHeader{
+		 	align-self: center;
+		 	text-align:center;
+	 		color:$white;
+	 		font-weight:bold;
+		 	.down{
+				transform: rotate(45deg);
+			    -webkit-transform: rotate(45deg);
+			  	border: solid $white;
+			  	border-width: 0 4px 4px 0;
+			  	display: inline-block;
+			 	padding: 6px;
+				margin:10%;
+			 	&:hover{
+			 		border: solid $lightBlue;
+					border-width: 0 4px 4px 0;
+			 	}
+			}
+	 	}	
+	}
+} 
+
+@media only screen and (max-width: 600px) {
+	header{
+	  	.headerOverlay{
+			button{
+				@include button(flex-end, 4% 10% 0 0, bold, 10px 80px);
+			}	
+			.title{
+				h1{
+			 		text-align:center;
+		 		}
+				img{
+			 		width:80%;
+			 		position:absolute;
+			 		top:-120%;
+			 		left:14%;
+			 		transform:rotate(-45deg);
+			 	    -webkit-transform: rotate(-45deg);
+		 		}
+		 	}	
+		}
+	} 
+}
+
+@media only screen and (max-width: 346px) {
+	header{
+	  	.headerOverlay{
+			button{
+				@include button(flex-end, 4% auto 0 auto, bold, 10px 60px);
+			}	
+			.title{
+				img{
+			 		width:60%;
+			 		position:absolute;
+			 		top:50%;
+			 		left:20%;
+			 		transform:rotate(-45deg);
+			 	    -webkit-transform: rotate(-45deg);
+		 		}
+		 	} 	
+		}	
+	}
+} 
+	
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
