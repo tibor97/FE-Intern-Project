@@ -13,6 +13,32 @@
 </head>
   
 <body>
+	<div id="logDiv" class="modal">
+	  <form class="modal-content animate" action="/action_page.php" method="post">
+	    <div class="imgcontainer">
+	      <span onclick="document.getElementById('logDiv').style.display='none'" class="close" title="Close Modal">&times;</span>
+	    </div>
+
+	    <div class="container">
+	      <label for="uname"><b>Username</b></label>
+	      <input type="text" placeholder="Enter Username" name="uname" required>
+
+	      <label for="psw"><b>Password</b></label>
+	      <input type="password" placeholder="Enter Password" name="psw" required>
+	        
+	      <button type="submit" class="logButton">Login</button>
+	      <label>
+	        <input type="checkbox" checked="checked" name="remember"> Remember me
+	      </label>
+	    </div>
+
+	    <div class="container"">
+	      <button type="button" onclick="document.getElementById('logDiv').style.display='none'" class="cancelbtn">Cancel</button>
+	      <span class="psw"><a href="#">Forgot password?</a></span>
+	    </div>
+	  </form>
+	</div>
+
 	<ul class="nav">
       <a href="#header"><li><span class="spanHeader">header</span></li></a>
       <a href="#aboutUs"><li><span class="spanAbout">about us</span></li></a>
@@ -20,10 +46,11 @@
       <a href="#advisors"><li><span class="spanAdvisors">our adviors</span></li></a>
       <a href="#investors"><li><span class="spanInvestors">our investors</span></li></a>
     </ul>
+    
 	<header id="header">
 		<div class="headerOverlay">
 			<div class="one"></div>
-			<button>LOGIN</button>
+			<button onclick="document.getElementById('logDiv').style.display='flex'">LOGIN</button>
 		    <div class="title">
 		    	<h1>HARPOON VENTURES</h1>
 			   	<img src="images/harpoon.png">
