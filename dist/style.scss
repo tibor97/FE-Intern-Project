@@ -1,0 +1,59 @@
+@import'variables';
+@import'mixins';
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+@import'nav';
+@import'header';
+
+section{
+	article{
+		width:$articleWidth;
+		margin:0% auto;
+		padding:$paddingTopArticle 0 $paddingBottomArticle 0;
+		p{
+			line-height:1.8em;
+			font-size:1.1em;
+		}
+		.quotation{
+		color:$blueForText;
+  		display:inline-block;
+  		font-weight: bold;
+		font-size:2em;
+		}
+	}
+
+	@import'about';
+	@import'portfolio';
+	@import'advisors';
+	@import'investors';	
+}
+
+footer{
+	background-color:$lightBlue;
+	text-align:center;
+	p{
+		padding:1%;
+		color:$white;
+	}
+}
+@media only screen and (max-width: 600px) {
+	footer{
+		p{
+			padding:3%;
+		}
+	}	
+}
+
+
+
+
+
+
+
+
+

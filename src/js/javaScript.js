@@ -7,7 +7,6 @@ $(document).ready(function(){
 	    e.preventDefault();
 	});
 
-
 	$.fn.isInViewport = function() {
 	  var elementTop = $(this).offset().top;
 	  var elementBottom = elementTop + $(this).outerHeight();
@@ -24,6 +23,4 @@ $(document).ready(function(){
 		    	$('a').css('color', 'white');
 		    }
 	});
-
-
 });

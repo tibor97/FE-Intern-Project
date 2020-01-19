@@ -3,6 +3,7 @@ var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var uglifyCSS = require('gulp-uglifyCss');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer')
 
 
 gulp.task('copyHtml', async function(){
@@ -29,6 +30,14 @@ gulp.task('sass', async function(){
       .pipe(gulp.dest('dist/css'));
 });
 
+gulp.task('autoPrefix', async function(){
+  gulp.src('src/sass/*.scss')
+        .pipe(autoprefixer({
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist'))
+});
+
 
 gulp.task('watch', async function(){
 	gulp.watch('src/js/*.js', function() {
@@ -52,4 +61,4 @@ gulp.task('watch', async function(){
 		gulp.watch('src/*.html', gulp.registry().get('copyHtml'));
 });
 
-gulp.task('default', gulp.series('copyHtml', 'imageMin','minify','sass', 'watch'));
+gulp.task('default', gulp.series('copyHtml', 'imageMin','minify','sass','autoPrefix', 'watch'));
