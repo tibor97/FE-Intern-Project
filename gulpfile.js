@@ -25,19 +25,16 @@ gulp.task('minify', async function(){
 
 gulp.task('sass', async function(){
   gulp.src('src/sass/*.scss')
+  		.pipe(autoprefixer({
+            cascade: false
+        }))
       .pipe(sass().on('error', sass.logError))
+      .pipe(autoprefixer({
+            cascade: false
+        }))
       .pipe(uglifyCSS())
       .pipe(gulp.dest('dist/css'));
 });
-
-gulp.task('autoPrefix', async function(){
-  gulp.src('src/sass/*.scss')
-        .pipe(autoprefixer({
-            cascade: false
-        }))
-        .pipe(gulp.dest('dist'))
-});
-
 
 gulp.task('watch', async function(){
 	gulp.watch('src/js/*.js', function() {
@@ -61,4 +58,4 @@ gulp.task('watch', async function(){
 		gulp.watch('src/*.html', gulp.registry().get('copyHtml'));
 });
 
-gulp.task('default', gulp.series('copyHtml', 'imageMin','minify','sass','autoPrefix', 'watch'));
+gulp.task('default', gulp.series('copyHtml', 'imageMin','minify','sass', 'watch'));
