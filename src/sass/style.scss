@@ -12,6 +12,7 @@
 @import'header';
 
 section{
+	overflow:hidden;
 	article{
 		width:$articleWidth;
 		margin:0% auto;

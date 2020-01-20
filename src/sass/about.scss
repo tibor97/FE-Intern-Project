@@ -7,6 +7,7 @@
 .aboutUs{
 	padding:$paddingTopArticle 0 13% 0;
 	position:relative;
+	right:-100%;
 	.leftDiv{
 		width:60%;
 		p{
@@ -22,7 +23,7 @@
 	  	flex-wrap: wrap;
 		position:absolute;
 		top:0px;
-		right:0px;
+		right:0%;
 		transform:rotate(45deg);
 		-webkit-transform: rotate(45deg);
 		div{

@@ -11,6 +11,8 @@
   		justify-content: space-between;
 	  	flex-wrap: wrap;
 		.advisorsCard{
+		position:relative;
+		left:-100%;
 			display:flex;
 	  		justify-content: flex-start;
 		  	flex-wrap: wrap;
@@ -80,7 +82,7 @@
 		article{
 		width:$articleWidth1135;
 		.advisorsCard{
-			height:370px;
+			height:320px;
 			.text{			
 				ul{
 					display:inline-block;
