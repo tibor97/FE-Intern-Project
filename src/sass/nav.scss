@@ -40,6 +40,17 @@
 	    }
     }
 }
+.scrollToTop{
+    font-size:5em;
+    font-weight:bold;
+    transform:rotate(270deg);
+    position:fixed;
+    z-index:9;
+    color:$lightBlue;
+    top:80%;
+    right:10%;
+    display:none;
+}
 @media only screen and (max-width: 800px){
     .nav{ 
     right:-1%;  
