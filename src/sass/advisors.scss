@@ -76,26 +76,24 @@
 		}
 	}
 }
-
 @media only screen and (max-width: 1135px) {
 	.advisors{
 		article{
 		width:$articleWidth1135;
-		.advisorsCard{
-			height:320px;
-			.text{			
-				ul{
-					display:inline-block;
-					li{
-						text-align:left;
-				  	}
-				}
-			}			
-		}
+			.advisorsCard{
+				height:320px;
+				.text{			
+					ul{
+						display:inline-block;
+						li{
+							text-align:left;
+					  	}
+					}
+				}			
+			}
 		}	
 	}
 }
-
 @media only screen and (max-width: 600px) {
 	.advisors{
 		.advisorsH1{

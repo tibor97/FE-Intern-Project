@@ -28,7 +28,6 @@ section{
 		font-size:2em;
 		}
 	}
-
 	@import'about';
 	@import'portfolio';
 	@import'advisors';
@@ -43,6 +42,7 @@ footer{
 		color:$white;
 	}
 }
+
 @media only screen and (max-width: 600px) {
 	footer{
 		p{
