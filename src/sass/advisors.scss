@@ -120,4 +120,13 @@
 		}
 	}
 }
+@media only screen and (max-width: 400px) {
+	.advisors{
+		article{
+			.advisorsCard{
+				height:600px;			
+			}
+		}
+	}
+}
 
